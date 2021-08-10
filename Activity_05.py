@@ -1,7 +1,8 @@
-lst = input("Enter the numbers:")
-num = lst.split()
+t = input("Enter the numbers:")
+num = t.split()
 print(num)
-sum = 0
+m = 0
 for i in num:
-    sum = sum + int(i)
-print(sum)    
+    m+=int(i)
+print(m)
+
