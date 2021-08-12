@@ -8,7 +8,5 @@ k = l**2+b**2+h**2
 
 v = ((b**2)*(h**2))/(k**1/2)
 print("The volume of tromboloid is :",v)
-r = (v*(3/4))/3.14
-#print(r)
-r1 = r**(1/3)
-print("Radius of sphere with same volume as troboloid is: ",r1)
+r = ((v*(3/4))/3.14)**(1/3)
+print("Radius of sphere with same volume as troboloid is: ",r)
