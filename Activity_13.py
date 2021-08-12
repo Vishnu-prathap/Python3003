@@ -1,9 +1,10 @@
+import math
 def input_num():
     num = int(input("Enter a number "))
     return num
 def checkforprime(num):
     if num>1:
-        for i in range(2,num):
+        for i in range(2,int(math.sqrt(num))+1):
             if(num%i)==0:
                 print(num,"is not a prime number")
                 break
@@ -15,3 +16,4 @@ def main():
     c = checkforprime(a)
 
 main()
+
