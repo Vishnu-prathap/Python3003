@@ -4,7 +4,7 @@ def input_number():
 def compare(a,b,c):
     if (a<b)and(c<b):
         print(f"{b} is the greatest number")
-    elif (c>b)and(c>a):
+    elif (c>a):
         print(f"{c} is the greatest number")
     else:
         print(f"{a} is the greatest number")
