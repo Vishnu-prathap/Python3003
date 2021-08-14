@@ -1,6 +1,7 @@
-def input_num():
-    num = float(input("Enter the number: "))
-    return num
+def input_dimensions():
+    num = int(input("Enter the values of length, breadth and Height of tromboloid: "))
+    
+    return int(num.split())
 def valk(l,b,h):
     k = l**2+b**2+h**2
     return k
@@ -11,12 +12,9 @@ def radius(v):
     r = ((v*(3/4))/3.14)**(1/3)
     return r
 def main():
-    print(" Lenght: ")
-    l = input_num()
-    print(" Breadth: ")
-    b = input_num()
-    print("height: ")
-    h = input_num()
+    l = input_dimensions()
+    b = input_dimensions()
+    h = input_dimensions()
     k = valk(l,b,h)
     volume = vol(l,b,h,k)
     print("The volume of the trombolod is: ",volume)
@@ -25,3 +23,4 @@ def main():
     
     
 main()
+
