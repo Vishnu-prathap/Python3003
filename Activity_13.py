@@ -5,15 +5,15 @@ def input_num():
     return num
 
 def checkforprime(num):
-    flag = 1
+    flag = True #use boolean t & f
     if num>1:
         for i in range(2,int(math.sqrt(num))):
             if (num%i)== 0:
-                flag = 0
+                flag = False
     return flag
 def output(flag,num):
              
-        if(flag==1):
+        if(flag):
             print(f"{num} is a prime number\n")
             
                     
