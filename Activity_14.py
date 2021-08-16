@@ -1,10 +1,7 @@
 def input_dimensions():
     num = input("Enter the values of length, breadth and Height of tromboloid: ")
     x = num.split()
-    m =[]
-    for i in x:
-        ele = float(i)
-        m.append(ele)
+    m = [float(ele) for ele in x]#An element is to be converted into float, it searches for element in x(old list)
     return m
     
 def valk(m):
