@@ -3,11 +3,9 @@ def input_number_of_numbers():
   return n
 
 def input_numbers(a):
-  lst = []
-  for i in range(0,a):
-    nos = int(input("Enter the number\n"))
-    lst.append(nos)
-  return lst
+  numbers = []
+  numbers = [int(a) for a in input("Enter the numbers\n").split(" ")]
+  return numbers
 
 def sumofinputnos(b):
   sum = 0
@@ -22,4 +20,5 @@ def main():
   return
 
 main()
+
 
