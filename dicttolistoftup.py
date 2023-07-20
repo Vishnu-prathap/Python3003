@@ -1,13 +1,6 @@
-dict = {'A': 10, 'B': 12, 'C': 31}
-
-
- 
-def dicttolist(dict):
-  list1 = []
-  for i in dict:
-    k = (i, dict[i])
-    list1.append(k)
+dict1 = {'A': 10, 'B': 12, 'C': 31}
+def dictolist(dict1):
+  list1 = [(k,dict1[k]) for k in dict1]
   return list1
 
-a = dicttolist(dict)
-print(a)
+print(dictolist(dict1))
